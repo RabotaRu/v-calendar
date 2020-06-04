@@ -29,6 +29,7 @@
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve src/lib.js",
+    "serve-dev": "vue-cli-service serve src/dev.js",
     "build": "yarn build:lib && yarn build:calendar && yarn build:date-picker && yarn build:popover && yarn build:popover-ref && yarn build:popover-row",
     "build:lib": "vue-cli-service build --target lib src/lib.js --mode production",
     "build:calendar": "vue-cli-service build --target lib --dest lib/components --name calendar src/components/Calendar.vue",

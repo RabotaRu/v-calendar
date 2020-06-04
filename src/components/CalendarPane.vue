@@ -84,13 +84,19 @@ export default {
         ],
       );
 
+    // Computing weeks rows
+    const days = this.page.days;
+    const nextMonthIndex = days.findIndex(day => day.inNextMonth);
+    const rowsCountFloat = nextMonthIndex / 7;
+    const rowsCount = Math.ceil(rowsCountFloat) + 1;
+
     // Weeks
     const weeks = h(
       Grid,
       {
         class: 'vc-weeks',
         props: {
-          rows: 7,
+          rows: rowsCount,
           columns: 7,
           columnWidth: '1fr',
           disableFocus: true,
