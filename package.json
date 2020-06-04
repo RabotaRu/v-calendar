@@ -42,7 +42,7 @@
     "dev": "vuepress dev docs",
     "build:docs": "vuepress build docs",
     "deploy:docs": "vuepress build docs && netlify deploy",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build --scripts-prepend-node-path"
   },
   "dependencies": {
     "date-fns": "^2.6.0",
