@@ -41,7 +41,8 @@
     "lint": "vue-cli-service lint",
     "dev": "vuepress dev docs",
     "build:docs": "vuepress build docs",
-    "deploy:docs": "vuepress build docs && netlify deploy"
+    "deploy:docs": "vuepress build docs && netlify deploy",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "date-fns": "^2.6.0",
