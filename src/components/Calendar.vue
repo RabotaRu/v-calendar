@@ -237,6 +237,7 @@ export default {
             ],
           ),
           getDayPopover(),
+          this.safeScopedSlot('pane-bottom')
         ],
       );
 
