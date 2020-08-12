@@ -355,7 +355,7 @@ export default {
         });
         content.push({
           key: `${key}-content`,
-          class: start.contentClass,
+          class: `${start.contentClass} vc-drag-content-start`,
         });
       } else if (onEnd) {
         backgrounds.push({
@@ -370,7 +370,7 @@ export default {
         });
         content.push({
           key: `${key}-content`,
-          class: end.contentClass,
+          class: `${end.contentClass} vc-drag-content-end`,
         });
       } else {
         backgrounds.push({
