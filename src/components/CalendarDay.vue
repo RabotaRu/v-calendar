@@ -122,12 +122,24 @@ export default {
       );
 
     // Root layer
+    const additionalDayClasses = [];
+    // Добавляем классы чтобы различать драг и простое выделение
+    if (this.day.attributesMap) {
+      if (this.day.attributesMap['select-drag']) {
+        additionalDayClasses.push('vc-day_select-drag');
+      }
+      if (this.day.attributesMap.deffered) {
+        additionalDayClasses.push('vc-day_deffered');
+      }
+    }
+
     return h(
       'div',
       {
         class: [
           'vc-day',
           ...this.day.classes,
+          ...additionalDayClasses,
           { 'vc-day-box-center-center': !this.$scopedSlots['day-content'] },
         ],
       },
@@ -595,5 +607,11 @@ export default {
   flex-grow: 1;
   height: var(--bar-height);
   transition: all var(--day-content-transition-time);
+}
+
+.vc-day_deffered {
+}
+
+.vc-day_select-drag {
 }
 </style>
