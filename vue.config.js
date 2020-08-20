@@ -4,7 +4,7 @@ module.exports = {
   css: {
     extract: false,
   },
-  // runtimeCompiler: true,
+  runtimeCompiler: true,
   outputDir: 'lib',
   configureWebpack: {
     resolve: {

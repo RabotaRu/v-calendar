@@ -769,7 +769,8 @@ export default {
   --day-content-height: 28px;
   --day-content-margin: 1.6px auto;
   --day-content-transition-time: 0.13s ease-in;
-  --day-content-bg-color-hover: hsla(211, 25%, 84%, 0.3);
+  /*--day-content-bg-color-hover: hsla(211, 25%, 84%, 0.3);*/
+  --day-content-bg-color-hover: #DDE4ED;
   --day-content-dark-bg-color-hover: hsla(216, 15%, 52%, 0.3);
   --day-content-bg-color-focus: hsla(211, 25%, 84%, 0.4);
   --day-content-dark-bg-color-focus: hsla(216, 15%, 52%, 0.4);
