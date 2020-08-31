@@ -29,7 +29,7 @@ new Vue({
   },
   template: `
   <div>
-    <v-date-picker mode="range" is-inline v-model="date" :attributes="attributes">
+    <v-date-picker is-inline v-model="date" :attributes="attributes">
       <template #header-left-button><<</template>
       <template #pane-bottom> Bottom pane</template>
     </v-date-picker>

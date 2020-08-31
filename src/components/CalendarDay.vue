@@ -129,10 +129,10 @@ export default {
         additionalDayClasses.push('vc-day_select-drag');
         const dates = this.day.attributesMap['select-drag'].dates ? this.day.attributesMap['select-drag'].dates[0] : [];
         if (this.day && this.day.date) {
-          if (dates.start.getTime() === this.day.date.getTime()) {
+          if (dates.start && dates.start.getTime() === this.day.date.getTime()) {
             additionalDayClasses.push('vc-day_select-drag_start');
           }
-          if (dates.end.getTime() === this.day.date.getTime()) {
+          if (dates.end && dates.end.getTime() === this.day.date.getTime()) {
             additionalDayClasses.push('vc-day_select-drag_end');
           }
         }
